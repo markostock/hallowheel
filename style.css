@@ -1,0 +1,418 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+body {
+  font-family: Open Sans;
+  display: flex; /*flex alunperin */
+  justify-content: center;
+  align-items: center;
+  float: center;
+  /* height: 100vh; */
+  overflow: hidden;
+  background: url();
+  background-size: 100% 100%;
+}
+
+/* Voitto tyyli */
+
+.swal2-popup {
+  font-size: 1.6rem !important;
+  font-family: Georgia, serif;
+  float: center;
+  text-shadow: 0 0 10px #000000, 0 0 10px #000000;
+}
+
+/*Slottiwheelin koko*/
+.mainbox {
+  position:sticky;
+  width: 863px; /*863px*/
+  height: 863px; /*863px*/
+}
+
+.sivunappulat {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 10%;
+  color: white;
+  position: absolute;
+  font-weight: bold;
+  font-size: 15px;
+  text-shadow: rgb(0, 0, 0) 2px 0 10px;
+  left: 5%;
+  border-radius: 25px;
+  border: 1px solid #d4d4d4;
+}
+
+.oikeanappulat {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 10%;
+  color: white;
+  position: absolute;
+  font-weight: bold;
+  font-size: 15px;
+  text-shadow: rgb(0, 0, 0) 2px 0 10px;
+  right: 5%;
+  border-radius: 25px;
+  border: 1px solid #d4d4d4;
+}
+
+#kultavoitto {
+  top: 5%;
+  height: 40%;
+  background: rgb(255, 187, 0);
+}
+
+#hopeavoitto {
+  top: 55%;
+  height: 40%;
+  background: rgb(178, 178, 178);
+}
+
+#resetointi {
+  top: 5%;
+  height: 40%;
+  background: rgb(114, 114, 114);
+}
+
+
+/* TICKER */
+.mainbox:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(timantti.png) no-repeat;
+  background-size: 10%;
+  left: 45%;
+  top: -7%;
+  transform: rotate(0deg);
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 50%;
+  border: 0px solid hsl(0, 0%, 100%);
+  overflow: hidden; /*Näyttää reunat, hidden or visible */
+  /*transition: all ease-in-out 5s;*/
+  transform: rotate(0deg); /*kääntää boksin, normaalisti 90 deg */
+}
+
+span {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0 0 10px #000000, 0 0 10px #000000;
+}
+
+/* 1-5  BOX1*/
+
+.box1 .span1 {
+  clip-path: polygon(0 34%, 0 50%, 50% 50%);
+  background: rgb(255, 0, 0) url();
+}
+
+.box1 .span2 {
+  clip-path: polygon(0 34%, 0% 9%, 50% 50%);
+  background-color: rgb(255, 68, 0);
+}
+
+.box1 .span3 {
+  clip-path: polygon(0 9%, 0% 0%, 20% 0%, 50% 50%);
+  background: rgb(255, 132, 0) url();
+}
+
+.box1 .span4 {
+  clip-path: polygon(20% 0%, 41% 0, 50% 50%);
+  background-color: rgb(255, 208, 0);
+}
+
+.box1 .span5 {
+  clip-path: polygon(41% 0, 59% 0, 50% 50%);
+  background: #e1ff00;
+}
+
+/* 6-10  BOX1*/
+
+.box1 .span6 {
+  clip-path: polygon(59% 0, 79% 0, 50% 50%);
+  background: rgb(179, 255, 0);
+}
+
+.box1 .span7 {
+  clip-path: polygon(79% 0, 100% 0%, 100% 9%, 50% 50%);
+  background: rgb(119, 255, 0);
+}
+
+.box1 .span8 {
+  clip-path: polygon(100% 9%, 100% 32%, 50% 50%);
+  background: rgb(0, 255, 128) url();
+}
+
+.box1 .span9 {
+  clip-path: polygon(100% 32%, 100% 49.1%, 50% 50%);
+  background: rgb(114, 250, 234) url();
+  background-size: 410px;
+  background-repeat: no-repeat;
+  background-position-x: 103%;
+  background-position-y: 41.5%;
+}
+
+.box1 .span10 { /*12H STREAM*/
+  clip-path: polygon(100% 49.1%, 100% 50%, 50% 50%);
+  background: rgb(255, 187, 0);
+}
+
+/* 11-20 BOX2 */
+
+
+.box2 .span1 {
+  clip-path: polygon(0 34%, 0 50%, 50% 50%);
+  background: #00ddff url();
+}
+
+.box2 .span2 {
+  clip-path: polygon(0 34%, 0% 9%, 50% 50%);
+  background-color: #0091ff;
+}
+
+.box2 .span3 {
+  clip-path: polygon(0 9%, 0% 0%, 20% 0%, 50% 50%);
+  background: #0051ff url();
+}
+
+.box2 .span4 {
+  clip-path: polygon(20% 0%, 41% 0, 50% 50%);
+  background: #3700ff;
+}
+
+.box2 .span5 {
+  clip-path: polygon(41% 0, 59% 0, 50% 50%);
+  background: #7300ff url();
+}
+
+.box2 .span6 {
+  clip-path: polygon(59% 0, 79% 0, 50% 50%);
+  background-color: #9900ff;
+}
+
+.box2 .span7 {
+  clip-path: polygon(79% 0, 100% 0%, 100% 9%, 50% 50%);
+  background-color: #cc00ff;
+}
+
+.box2 .span8 {
+  clip-path: polygon(100% 9%, 100% 32%, 50% 50%);
+  background: #f200ff url();
+}
+
+.box2 .span9 {
+  clip-path: polygon(100% 32%, 100% 49.1%, 50% 50%);
+  background-color: #ff0099;
+}
+
+.box2 .span10 { /*HOPEAVOITTO*/
+  clip-path: polygon(100% 49.1%, 100% 50%, 50% 50%);
+  background: rgb(178, 178, 178);
+}
+
+.box2 {
+  width: 100%;
+  height: 100%;
+  transform: rotate(180deg);
+}
+
+/* BOX2 päättyy */
+
+.font {
+  font-size: 25px;
+}
+
+/* BOX 1 Tekstit */
+
+.box1 .span1 b {
+  position: absolute;
+  top: 43%;
+  right: 82%;
+  transform: rotate(189deg);
+}
+
+.box1 .span2 b {
+  position: absolute;
+  top: 32%;
+  right: 71%;
+  transform: rotate(-154deg);
+}
+
+.box1 .span3 b {
+  position: absolute;
+  top: 20%;
+  right: 69%;
+  transform: rotate(-133deg);
+}
+
+.box1 .span4 b {
+  position: absolute;
+  top: 14%;
+  right: 54%;
+  transform: rotate(-111deg);
+}
+
+.box1 .span5 b {
+  position: absolute;
+  top: 12%;
+  right: 40%;
+  transform: rotate(-90deg);
+}
+
+.box1 .span6 b { 
+  position: absolute;
+  top: 15%;
+  right: 28%;
+  transform: rotate(-70deg);
+}
+
+.box1 .span7 b {
+  position: absolute;
+  top: 22%;
+  right: 16%;
+  transform: rotate(-49deg);
+}
+
+.box1 .span8 b {
+  position: absolute;
+  top: 29%;
+  right: 9%;
+  transform: rotate(-30deg);
+}
+
+.box1 .span9 b {
+  position: absolute;
+  top: 42%;
+  right: 4%;
+  transform: rotate(-8deg);
+}
+
+.box1 .span10 b { 
+  position: absolute;
+  top: 30%;
+  right: 45%;
+  transform: rotate(-100deg);
+  color: transparent; /*12H STREAM  ERIKOISPALKINTO*/
+}
+
+/*BOX2 PALKINTOTEKSTIT */
+
+.box2 .span1 b {
+  position: absolute;
+  top: 42%;
+  right: 82%;
+  transform: rotate(189deg);
+}
+
+.box2 .span2 b {
+  position: absolute;
+  top: 31%;
+  right: 69%;
+  transform: rotate(-150deg);
+}
+
+.box2 .span3 b {
+  position: absolute;
+  top: 18%;
+  right: 69%;
+  transform: rotate(-130deg);
+}
+
+.box2 .span4 b {
+  position: absolute;
+  top: 12%;
+  right: 57%;
+  transform: rotate(-111deg);
+}
+
+.box2 .span5 b {
+  position: absolute;
+  top: 10%;
+  right: 44%;
+  transform: rotate(-90deg);
+}
+
+
+.box2 .span6 b { 
+  position: absolute;
+  top: 16%;
+  right: 28%;
+  transform: rotate(-71deg);
+}
+
+.box2 .span7 b {
+  position: absolute;
+  top: 22%;
+  right: 16%;
+  transform: rotate(-50deg);
+}
+
+.box2 .span8 b {
+  position: absolute;
+  top: 29%;
+  right: 10%;
+  transform: rotate(-32deg);
+}
+
+.box2 .span9 b {
+  position: absolute;
+  top: 41%;
+  right: 5%;
+  transform: rotate(-11deg);
+}
+
+.box2 .span10 b { 
+  position: absolute;
+  top: 30%;
+  right: 45%;
+  transform: rotate(-100deg);
+  color: transparent; /*KATSOJA PÄÄTTÄÄ PELIN HOPEA*/
+}
+
+/* SPIN */
+
+.spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 160px;
+  height: 160px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+
+.mainbox.animate:after {
+  animation: animateArrow 0.7s ease infinite;
+}
+
+audio {
+  display: none;
+}
+
+@keyframes animateArrow {
+  50% {
+    right: -50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainbox {
+    width: 100%;
+    height: 50%;
+  }
+}
